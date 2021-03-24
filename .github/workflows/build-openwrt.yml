@@ -152,9 +152,9 @@ jobs:
           echo "ZUOZHE=ctcgfw" >> $GITHUB_ENV
         fi
         source "${PATH1}/common.sh" && Diy_all2
-        if [ -n "$(ls -A "${PATH1}/files" 2>/dev/null)" ]; then
-          cp -Rf "${PATH1}/files" "${Home}" && chmod -R +x ${Home}/files
-        fi
+        #if [ -n "$(ls -A "${PATH1}/files" 2>/dev/null)" ]; then
+          #cp -Rf "${PATH1}/files" "${Home}" && chmod -R +x ${Home}/files
+        #fi
         if [ -n "$(ls -A "${PATH1}/diy" 2>/dev/null)" ]; then
           cp -Rf "${PATH1}"/diy/* "${Home}"
         fi
